@@ -29,6 +29,19 @@ body {
     line-height: 1.6;
 }
 
+.barra-topo {
+     position: fixed;   /* fica fixa */
+             /* no topo */
+  left: 0;
+  width: 100%;       /* ocupa a largura toda */
+  background-color: #e63946; /* vermelho da sua imagem */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  z-index: 9999;   
+  }  /* garante que fica por cima */
+
 .container-primario {
     max-width: 700px;
     margin: 40px auto 0 auto;
@@ -221,6 +234,7 @@ body {
     color: var(--cinza);
     font-size: 1.05rem;
     margin-bottom: 14px;
+    text-align: center;
 }
 
 .valor {
@@ -235,25 +249,33 @@ body {
     color: var(--cinza);
     font-size: 1.08rem;
     margin-bottom: 18px;
+    text-align: center;
 }
 
-.plano-lista p, .pl-mensal p {
-    margin: 7px 0;
+.plano-lista {
+    list-style: none;
+    padding:0
+    margin: 0;
     font-size: 1.07rem;
     color: var(--cinza);
 }
+
+.plano-lista li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
 
 .botao-plano {
     background: linear-gradient(90deg, var(--roxo), var(--azul));
     color: #fff;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 10px 50px;
     font-size: 1.13rem;
     cursor: pointer;
-    margin-top: 18px;
+    margin-top: 30px;
     transition: filter 0.2s, transform 0.2s;
-    width: 100%;
+    text-align: center;
     font-weight: 600;
     box-shadow: 0 2px 12px rgba(124, 58, 237, 0.10);
     text-decoration: none;
@@ -591,7 +613,7 @@ body {
 
 .suporte-botao {
   display: inline-block;
-  background: #25d366;
+  background:  #25d365b4;
   color: #fff;
   font-weight: 600;
   padding: 10px 28px;
@@ -735,7 +757,7 @@ body {
         max-width: 90vw;
     }
     .escolha-plano {
-        font-size: 1.4rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -748,9 +770,12 @@ body {
     }
     .plano-titulo, .plano-mensal {
         font-size: 1.1rem;
+        text-align: center;
     }
     .valor {
         font-size: 1.5rem;
+         text-align: center;
+        
     }
     .selo {
         right: 10px;
@@ -759,7 +784,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 485px) {
     .container-primario {
         padding: 8px 1vw 0 1vw;
     }
@@ -767,7 +792,7 @@ body {
         padding: 10px 1vw;
     }
     .escolha-plano {
-        font-size: 1.1rem;
+        font-size: 2.5rem;
     }
     .letra-tamanho {
         font-size: 0.98rem;
@@ -779,14 +804,16 @@ body {
     /* Responsivo: empilha os planos no mobile */
 @media (max-width: 1100px) {
     .planos-container {
-        gap: 18px;
+        gap: 30px;
     }
     .bloco-todo {
-        max-width: 98vw;
-        min-width: 220px;
+        width: 50%;
+        max-width: 400px;
+        margin: 20px auto;
     }
 }
-@media (max-width: 800px) {
+    
+@media (max-width: 768px) {
     .planos-container {
         flex-direction: column;
         align-items: center;
