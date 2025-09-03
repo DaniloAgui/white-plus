@@ -30,8 +30,7 @@ body {
 }
 
 .barra-topo {
-     position: fixed;   /* fica fixa */
-             /* no topo */
+     position: fixed;   
   left: 0;
   width: 100%;       /* ocupa a largura toda */
   background-color: #e63946; /* vermelho da sua imagem */
