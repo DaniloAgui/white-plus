@@ -30,16 +30,17 @@ body {
 }
 
 .barra-topo {
-     position: fixed;   
+     position: fixed;  
+    top:0;
   left: 0;
-  width: 100%;       /* ocupa a largura toda */
-  background-color: #e63946; /* vermelho da sua imagem */
+  width: 100%;       
+  background-color: #e63946; 
   color: white;
   text-align: center;
   padding: 10px;
   font-weight: bold;
   z-index: 9999;   
-  }  /* garante que fica por cima */
+  } 
 
 .container-primario {
     max-width: 700px;
@@ -253,7 +254,7 @@ body {
 
 .plano-lista {
     list-style: none;
-    padding:0
+    padding:0;
     margin: 0;
     font-size: 1.07rem;
     color: var(--cinza);
@@ -263,16 +264,20 @@ body {
     margin-bottom: 8px;
     display: flex;
     align-items: center;
+}
 
 .botao-plano {
+    displa: block;
+    whidth: 100;
+    max-whidth:100%
+    margin:20px auto 0;
     background: linear-gradient(90deg, var(--roxo), var(--azul));
     color: #fff;
     border: none;
     border-radius: 20px;
     padding: 10px 50px;
     font-size: 1.13rem;
-    cursor: pointer;
-    margin-top: 30px;
+    cursor: pointer; 
     transition: filter 0.2s, transform 0.2s;
     text-align: center;
     font-weight: 600;
@@ -800,10 +805,11 @@ body {
         font-size: 1rem;
         padding: 10px 0;
     }
+}
     /* Responsivo: empilha os planos no mobile */
 @media (max-width: 1100px) {
     .planos-container {
-        gap: 30px;
+        gap: 50px;
     }
     .bloco-todo {
         width: 50%;
@@ -823,7 +829,7 @@ body {
         max-width: 98vw;
     }
 }
-}
+
 
 .header-scrolled {
     background: linear-gradient(90deg, #5b21b6 0%, #167BF7 100%);
