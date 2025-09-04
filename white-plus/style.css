@@ -266,7 +266,7 @@ body {
 }
 
 .botao-plano {
-    displa: block;
+    display: block;
     background: linear-gradient(90deg, var(--roxo), var(--azul));
     color: #fff;
     border: none;
